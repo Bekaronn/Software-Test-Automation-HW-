@@ -1,0 +1,15 @@
+1742242278960	geckodriver	INFO	Listening on 127.0.0.1:64279
+1742242278988	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" "/Applications/Firefox. ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/m_/y_hnvf614fl5hbk0_mcxwnyw0000gn/T/rust_mozprofileojn1O8"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1742242279435	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1742242279770	Marionette	INFO	Listening on port 64294
+Read port: 64294
+WebDriver BiDi listening on ws://127.0.0.1:64280
+1742242279903	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2025-03-18 01:11:20.132 firefox[38614:1703915] +[IMKClient subclass]: chose IMKClient_Modern
+2025-03-18 01:11:20.132 firefox[38614:1703915] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+DevTools listening on ws://127.0.0.1:64280/devtools/browser/01d368ce-2780-4496-8103-5445b199a2e3
+JavaScript error: resource:///modules/sessionstore/SessionStore.sys.mjs, line 4168: TypeError: winData is undefined

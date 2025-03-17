@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.12.3 on darwin)" generated="2025-03-18T01:26:50.487740" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="/Users/bekaron/Desktop/Task/PythonProject/robotTests/testCases/test.robot">
+<test id="s1-t1" name="Sign Up" line="5">
+<kw name="Open Browser To DemoBlaze" owner="resources">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-18T01:26:50.582332" level="INFO">Opening browser 'chrome' to base url 'https://www.demoblaze.com/'.</msg>
+<arg>${TestData.URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-18T01:26:50.582085" elapsed="2.509450"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-18T01:26:55.099308" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-18T01:26:53.094874" elapsed="2.005020"/>
+</kw>
+<status status="PASS" start="2025-03-18T01:26:50.581752" elapsed="4.518879"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-18T01:26:55.114392" level="INFO">Clicking element 'xpath=//a[@id='signin2']'.</msg>
+<arg>${Locators.SIGNUP_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-18T01:26:55.101733" elapsed="0.073321"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-18T01:26:56.177123" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-18T01:26:55.175470" elapsed="1.002190"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-18T01:26:56.180832" level="INFO">Typing text 'ASDDKJKSD' into text field 'xpath=//input[@id='sign-username']'.</msg>
+<arg>${Locators.SIGNUP_USERNAME}</arg>
+<arg>${TestData.USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-18T01:26:56.178509" elapsed="0.142561"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-18T01:26:56.321612" level="INFO">Typing text 'ASDDKJKSD' into text field 'xpath=//input[@id='sign-password']'.</msg>
+<arg>${Locators.SIGNUP_PASSWORD}</arg>
+<arg>${TestData.PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-18T01:26:56.321212" elapsed="0.043582"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-18T01:26:57.366717" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-18T01:26:56.364958" elapsed="1.002037"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-03-18T01:26:57.368364" level="INFO">Clicking button 'xpath=//button[text()='Sign up']'.</msg>
+<arg>${Locators.SIGNUP_CONFIRM_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-18T01:26:57.367563" elapsed="0.055410"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-18T01:27:00.424053" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-18T01:26:57.423143" elapsed="3.001393"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-03-18T01:27:00.425342" elapsed="0.092698"/>
+</kw>
+<doc>Test register user</doc>
+<status status="PASS" start="2025-03-18T01:26:50.581444" elapsed="9.936777"/>
+</test>
+<test id="s1-t2" name="Log in" line="17">
+<kw name="Open Browser To DemoBlaze" owner="resources">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-18T01:27:00.519218" level="INFO">Opening browser 'chrome' to base url 'https://www.demoblaze.com/'.</msg>
+<arg>${TestData.URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-18T01:27:00.518895" elapsed="1.911329"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-18T01:27:04.433287" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-18T01:27:02.430727" elapsed="2.003031"/>
+</kw>
+<status status="PASS" start="2025-03-18T01:27:00.518691" elapsed="3.915629"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-18T01:27:04.437240" level="INFO">Clicking element 'xpath=//a[@id='login2']'.</msg>
+<arg>${Locators.LOGIN_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-18T01:27:04.435221" elapsed="0.062785"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-18T01:27:05.500220" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-18T01:27:04.498175" elapsed="1.002526"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-18T01:27:05.504149" level="INFO">Typing text 'ASDDKJKSD' into text field 'xpath=//input[@id='loginusername']'.</msg>
+<arg>${Locators.LOGIN_USERNAME}</arg>
+<arg>${TestData.USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-18T01:27:05.501506" elapsed="0.116037"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-18T01:27:05.618136" level="INFO">Typing text 'ASDDKJKSD' into text field 'xpath=//input[@id='loginpassword']'.</msg>
+<arg>${Locators.LOGIN_PASSWORD}</arg>
+<arg>${TestData.PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-18T01:27:05.617692" elapsed="0.032094"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-18T01:27:06.652209" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-18T01:27:05.649917" elapsed="1.002431"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-03-18T01:27:06.652974" level="INFO">Clicking button 'xpath=//button[text()='Log in']'.</msg>
+<arg>${Locators.LOGIN_CONFIRM_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-18T01:27:06.652571" elapsed="0.036443"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-18T01:27:09.691301" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-18T01:27:06.689132" elapsed="3.002685"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-03-18T01:27:09.692642" elapsed="0.088972"/>
+</kw>
+<doc>Test user login</doc>
+<status status="PASS" start="2025-03-18T01:27:00.518399" elapsed="9.263439"/>
+</test>
+<test id="s1-t3" name="Log out" line="29">
+<kw name="Open Browser To DemoBlaze" owner="resources">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-18T01:27:09.782880" level="INFO">Opening browser 'chrome' to base url 'https://www.demoblaze.com/'.</msg>
+<arg>${TestData.URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-18T01:27:09.782559" elapsed="1.216094"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-18T01:27:13.001376" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-18T01:27:10.999595" elapsed="2.002748"/>
+</kw>
+<status status="PASS" start="2025-03-18T01:27:09.782328" elapsed="3.220581"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-18T01:27:13.005758" level="INFO">Clicking element 'xpath=//a[@id='login2']'.</msg>
+<arg>${Locators.LOGIN_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-18T01:27:13.003806" elapsed="0.060186"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-18T01:27:14.065625" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-18T01:27:13.064411" elapsed="1.001534"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-18T01:27:14.068367" level="INFO">Typing text 'ASDDKJKSD' into text field 'xpath=//input[@id='loginusername']'.</msg>
+<arg>${Locators.LOGIN_USERNAME}</arg>
+<arg>${TestData.USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-18T01:27:14.066505" elapsed="0.122877"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-18T01:27:14.190010" level="INFO">Typing text 'ASDDKJKSD' into text field 'xpath=//input[@id='loginpassword']'.</msg>
+<arg>${Locators.LOGIN_PASSWORD}</arg>
+<arg>${TestData.PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-18T01:27:14.189541" elapsed="0.032916"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-18T01:27:15.225590" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-18T01:27:14.222589" elapsed="1.003320"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-03-18T01:27:15.227804" level="INFO">Clicking button 'xpath=//button[text()='Log in']'.</msg>
+<arg>${Locators.LOGIN_CONFIRM_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-18T01:27:15.226512" elapsed="0.058565"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-18T01:27:18.287285" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-18T01:27:15.285225" elapsed="3.002489"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-18T01:27:18.290259" level="INFO">Clicking element 'xpath=//a[@id='logout2']'.</msg>
+<arg>${Locators.LOGOUT_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-18T01:27:18.288487" elapsed="0.321431"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-18T01:27:21.612165" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-18T01:27:18.610151" elapsed="3.002159"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-03-18T01:27:21.612491" elapsed="0.081748"/>
+</kw>
+<doc>Test user logout</doc>
+<status status="PASS" start="2025-03-18T01:27:09.782026" elapsed="11.912417"/>
+</test>
+<status status="PASS" start="2025-03-18T01:26:50.488250" elapsed="31.206880"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test" id="s1" pass="3" fail="0" skip="0">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
